@@ -319,7 +319,11 @@ font-size:0.9rem;
          ">
 </a>
 
-<ul>
+<div class="hamburger" onclick="toggleMenu()">
+☰
+</div>
+
+<ul id="mobileMenu">
 <li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#payments">Payments</a></li>
@@ -327,6 +331,38 @@ font-size:0.9rem;
 </ul>
 
 </nav>
+
+.hamburger{
+display:none;
+font-size:2rem;
+cursor:pointer;
+color:white;
+}
+
+@media(max-width:768px){
+
+.hamburger{
+display:block;
+}
+
+nav ul{
+display:none;
+position:absolute;
+top:65px;
+right:10px;
+background:#111;
+padding:20px;
+border-radius:15px;
+flex-direction:column;
+gap:15px;
+box-shadow:0 0 15px rgba(0,140,255,.3);
+}
+
+nav ul.show{
+display:flex;
+}
+
+}
 
 <div class="hero">
     
@@ -439,6 +475,12 @@ WhatsApp
 href="tel:+447440209645">
 📞 Call Now
 </a>
+
+<script>
+function toggleMenu(){
+document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>

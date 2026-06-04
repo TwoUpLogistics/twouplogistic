@@ -254,12 +254,6 @@ box-shadow:0 0 25px rgba(0,140,255,.7);
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:2.4rem;
-}
-
-@media(max-width:768px){
-
 nav{
 padding:10px 15px;
 }
@@ -270,6 +264,10 @@ gap:12px;
 
 nav ul li a{
 font-size:0.85rem;
+}
+
+nav img{
+height:35px !important;
 }
 
 .hero h1{
@@ -284,13 +282,6 @@ font-size:1rem;
 .features{
 flex-direction:column;
 gap:15px;
-}
-
-#services img,
-#payments img,
-#contact img{
-width:100%;
-height:auto;
 }
 
 .whatsapp-float,
@@ -319,50 +310,10 @@ font-size:0.9rem;
          ">
 </a>
 
-<div class="hamburger" onclick="toggleMenu()">
-☰
-</div>
 
-<ul id="mobileMenu">
-<li><a href="#">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#payments">Payments</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
 
 </nav>
 
-.hamburger{
-display:none;
-font-size:2rem;
-cursor:pointer;
-color:white;
-}
-
-@media(max-width:768px){
-
-.hamburger{
-display:block;
-}
-
-nav ul{
-display:none;
-position:absolute;
-top:65px;
-right:10px;
-background:#111;
-padding:20px;
-border-radius:15px;
-flex-direction:column;
-gap:15px;
-box-shadow:0 0 15px rgba(0,140,255,.3);
-}
-
-nav ul.show{
-display:flex;
-}
-
-}
 
 <div class="hero">
     
@@ -451,7 +402,7 @@ Call Now
     display:block;
      margin:auto;
      border-radius:20px;
-        box-shadow:0 0 25px rgba(0,140,255,.3
+        box-shadow:0 0 25px rgba(0,140,255,.3)
      ">
 
 </div>

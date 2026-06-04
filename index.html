@@ -7,6 +7,52 @@
 
 <style>
 
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.9);
+backdrop-filter:blur(10px);
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+}
+
+.nav-logo{
+font-size:1.5rem;
+font-weight:bold;
+color:white;
+text-decoration:none;
+}
+
+.nav-logo span{
+color:#1e90ff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#1e90ff;
+}
+
+.hero{
+padding-top:160px;
+}    
+    
 .service-banner:hover{
 transform:
 perspective(1000px)
@@ -30,6 +76,20 @@ overflow-x:hidden;
 margin:0;
 padding:0;
 }
+    <nav>
+
+<a href="#" class="nav-logo">
+Two<span>Up</span> Logistics
+</a>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#payments">Payments</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
 
 
 .hero{
@@ -233,7 +293,7 @@ Call Now
 
     </section>
 
-<div style="text-align:center;margin-bottom:50px;">
+<div id="services" style="text-align:center;margin-bottom:50px;">
     <img src="ourservnew.png"
          alt="Our Services"
          style="
@@ -244,8 +304,7 @@ Call Now
          box-shadow:0 0 25px rgba(0,140,255,.3);">
 </div>
 
-<section>
-
+<section id="payments">
 <h2>Payment Methods</h2>
 
 <div class="grid">
@@ -269,7 +328,7 @@ Call Now
 
 </section>
 
-<section class="contact">
+<section id="contact" class="contact">
 
 <h2>Contact Us</h2>
 

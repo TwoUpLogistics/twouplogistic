@@ -220,6 +220,32 @@ border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 box-shadow:0 0 15px rgba(0,0,0,.3);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(37,211,102,.7);
+}
+
+.call-float{
+position:fixed;
+bottom:20px;
+left:20px;
+background:#1e90ff;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 15px rgba(0,140,255,.4);
+z-index:999;
+transition:0.3s;
+}
+
+.call-float:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(0,140,255,.7);
 }
 
 @media(max-width:768px){
@@ -365,6 +391,11 @@ Call Now
 <a class="whatsapp-float"
 href="https://wa.me/447440209645">
 WhatsApp
+</a>
+
+<a class="call-float"
+href="tel:+447440209645">
+📞 Call Now
 </a>
 
 </body>

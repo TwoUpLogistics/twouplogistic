@@ -11,9 +11,13 @@
 scroll-margin-top:100px;
 }
 
-#reviews:hover{
-transform:translateY(-3px);
-transition:0.3s;
+#reviews .btn{
+transition:.3s;
+}
+
+#reviews .btn:hover{
+transform:scale(1.05);
+box-shadow:0 0 25px rgba(0,140,255,.7);
 }
 
 nav{
@@ -433,41 +437,96 @@ Call Now
 <div style="
 max-width:1200px;
 margin:80px auto;
-padding:40px;
-background:#111;
-border:1px solid #1e90ff;
-border-radius:20px;
-box-shadow:0 0 25px rgba(0,140,255,.2);
+padding:60px 40px;
+background:
+linear-gradient(145deg,#0d0d0d,#111);
+border:1px solid rgba(30,144,255,.4);
+border-radius:25px;
+box-shadow:0 0 35px rgba(0,140,255,.25);
 text-align:center;
+overflow:hidden;
 ">
 
-<h2>⭐ Google Reviews</h2>
-
-<h3 style="
+<h2 style="
 font-size:3rem;
-color:#1e90ff;
 margin-bottom:10px;
 ">
+⭐ GOOGLE REVIEWS
+</h2>
+
+<div style="
+font-size:5rem;
+font-weight:bold;
+color:#1e90ff;
+line-height:1;
+">
 5.0
-</h3>
+</div>
+
+<div style="
+font-size:1.8rem;
+color:#ffd700;
+margin:10px 0 20px;
+">
+★★★★★
+</div>
 
 <p style="
 font-size:1.2rem;
-margin-bottom:30px;
-">
-Rated 5 Stars by our customers
-</p>
-
-<p style="
 max-width:700px;
 margin:auto;
-margin-bottom:30px;
+margin-bottom:40px;
+color:#ddd;
 ">
-We take pride in delivering a professional, reliable and fast courier service throughout London and Nationwide.
+Our customers trust TwoUp Logistics for fast, reliable and professional courier services across London and Nationwide.
+</p>
+
+<div style="
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+margin-bottom:40px;
+">
+
+<div>
+<h3 style="color:#1e90ff;">✓ Reliable</h3>
+<p>Professional service every time</p>
+</div>
+
+<div>
+<h3 style="color:#1e90ff;">✓ Fast</h3>
+<p>Urgent & same-day deliveries</p>
+</div>
+
+<div>
+<h3 style="color:#1e90ff;">✓ Nationwide</h3>
+<p>Coverage across the UK</p>
+</div>
+
+</div>
+
+<img src="reviewqr.png"
+style="
+width:220px;
+border-radius:15px;
+margin-bottom:20px;
+box-shadow:0 0 25px rgba(0,140,255,.4);
+">
+
+<p style="
+font-size:1.1rem;
+margin-bottom:25px;
+">
+Scan to leave us a Google Review
 </p>
 
 <a href="YOUR_GOOGLE_REVIEW_LINK"
-class="btn">
+class="btn"
+style="
+font-size:1.1rem;
+padding:18px 35px;
+">
 Leave A Review
 </a>
 
